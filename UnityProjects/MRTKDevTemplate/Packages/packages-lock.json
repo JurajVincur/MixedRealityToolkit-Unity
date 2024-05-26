@@ -59,6 +59,13 @@
       "source": "local-tarball",
       "dependencies": {}
     },
+    "com.ultraleap.tracking": {
+      "version": "6.15.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.unity.asset-store-validation": {
       "version": "0.5.1",
       "depth": 0,

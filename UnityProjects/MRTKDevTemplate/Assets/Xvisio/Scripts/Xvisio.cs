@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 public static class Xvisio
 {
     [DllImport("XvisioService.dll")]
-    public static extern void CStart(string json, byte mode);
+    public static extern void CStart([MarshalAs(UnmanagedType.LPStr)] string json);
 
     [DllImport("XvisioService.dll")]
     public static extern void CStop();
@@ -16,7 +16,7 @@ public static class Xvisio
 
     public static void Start(string json = "")
     {
-        CStart(json, 0); //edge mode
+        CStart(json);
     }
 
     public static void Stop()
